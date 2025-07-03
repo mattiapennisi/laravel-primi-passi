@@ -13,5 +13,12 @@ Route::get('/about', function () {
 
     $title = 'About';
 
-    return view('home', ['title' => $title]);
+    return view('about', ['title' => $title]);
+});
+
+Route::get('/contact', function () {
+
+    $title = 'Contact';
+
+    return view('contact', ['title' => $title]);
 });
